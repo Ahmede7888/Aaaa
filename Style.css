@@ -1,0 +1,189 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-color: #ffdd00;
+}
+body {
+  height: 1000vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  box-shadow: 5px 5px 5px 3px #888888;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main-color);
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation a{
+  text-decoration: none;
+  margin-left: 60px;
+  font-weight: bold;
+  color: #0e528e;
+}
+.navigation a:hover {
+  color: #5504d4;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+header div input {
+  padding: 5px 15px;
+  outline: none;
+  border-radius: 5px;
+  display: none;
+}
+header div:hover input {
+  display: block;
+}
+header div{
+ display: flex;
+ align-items: center;
+}
+header div .search, 
+header div .shoop {
+  padding: 0 20px;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  padding: 0 250px;
+}
+.container .img1 img {
+  width: 300px;
+}
+.container .section p {
+  font-weight: bold;
+  font-size: 40px;
+  padding: 15px 0;
+}
+.container .food,
+.container2 .section .food,
+.container3 .food,
+.container4 .food
+{
+  color: var(--main-color);
+  font-weight: 500;
+  font-style: oblique;
+}
+.container2 .section h4 {
+  margin: 15px 0;
+}
+.container2 .section p {
+  margin: 30px 0;
+  font-weight: bold;
+}
+.explore {
+  text-decoration: none;
+  color: black;
+  background-color: var(--main-color);
+  padding: 10px 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.container2 {
+  background-image: url(Ppp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
+  padding: 30px;
+}
+.container2 img{
+  width: 250px;
+}
+.container2 .section h4, 
+.container2 .section h2,
+.container2 .section p {
+  color: white;
+}
+.container3 .section3 img {
+   width: 300px;
+}
+.container3 h2 {
+  text-align: center;
+  padding: 60px 0;
+}
+.container3 {
+  padding: 20px;
+}
+.container3 .section3 {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
+}
+.container3 .row .center{
+  text-align: center;
+  width: 230px;
+  margin: 40px 0;
+  padding: 10px;
+}
+.container3 .section3 .row .ioo{
+  width: 260px;
+  height: 219px;
+    
+}
+.container3 .section3 .row .stars .star {
+  color: var(--main-color);
+  padding: 20px 0;
+}
+.container3 .section3 .row p {
+  font-weight: bold;
+  padding: 5px 0;
+}
+.container3 .section3 .row .test4 {
+  box-shadow: 5px 5px 5px 3px #888888;
+  width: 260px;
+}
+.Now {
+  padding: 15px 0;
+}
+.Now a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.container4 h2 {
+  text-align: center;
+}
+.container4 .section4 .imge4 img{
+  width: 350px;
+  height: 200px;
+  margin: 10px;
+} 
+.container4 .section4 .imge4 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+@media (max-width: 768px) {
+  .navigation a {
+    display: none;
+  }
+  header {
+    width: 100%;
+    padding: 0 100px;
+  }
+}
